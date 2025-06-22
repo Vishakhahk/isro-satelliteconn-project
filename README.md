@@ -1,2 +1,4 @@
 # isro-satelliteconn-project
 This is an independent, educational project and not affiliated with or endorsed by ISRO. All data shown is either simulated or sourced from publicly available examples. It was created strictly for learning, with full respect for ISRO’s work and values.
+ISRO SatConnect is an interactive web-based dashboard designed to visualize multiple satellite data layers relevant to India’s national development. Built using standard web technologies (HTML, CSS, JavaScript) and open-source mapping libraries like Leaflet.js and Chart.js, this project demonstrates how satellite data can be combined and presented effectively for real-world applications
+My goal was to show how powerful space applications can be made accessible and meaningful through simple, open technologies. The project is designed with future integration in mind, allowing APIs or real-time satellite data to be plugged in as the next step.
