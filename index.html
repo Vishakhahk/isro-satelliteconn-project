@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ISRO SatConnect | National Space Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+  />
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <img src="assets/isro-logo.png" alt="ISRO Logo" class="logo" />
+    <h1>🛰️ ISRO SatConnect</h1>
+    <p>Dashboard for Satellite Data Supporting India’s Development</p>
+  </header>
+
+  <nav>
+    <button onclick="showSection('dashboard')">Dashboard</button>
+    <button onclick="showSection('about')">About ISRO & Project</button>
+    <button onclick="showSection('contact')">Contact Me</button>
+  </nav>
+
+  <main>
+    <section id="dashboard" class="active-section">
+      <h2>🌐 Satellite Map Layers</h2>
+      <div id="map"></div>
+
+      <div class="layer-buttons">
+        <button onclick="showLayer('ndvi')">🌾 Crop Health (NDVI)</button>
+        <button onclick="showLayer('fires')">🔥 Forest Fires</button>
+        <button onclick="showLayer('rainfall')">☔ Rainfall</button>
+        <button onclick="showLayer('urban')">🏙️ Urban Growth</button>
+      </div>
+
+      <div id="fire-list" class="info-box"></div>
+
+      <h3>📊 Monthly Rainfall Chart (Sample Data)</h3>
+      <canvas id="rainfallChart" width="400" height="150"></canvas>
+    </section>
+
+    <section id="about" class="hidden-section">
+      <h2>About ISRO and This Project</h2>
+      <p>
+        The Indian Space Research Organisation (ISRO) uses satellites for communication, weather, agriculture, disaster management, and national development. This project demonstrates the power of space applications using open data and web technologies.
+      </p>
+      <p>
+        Built using HTML, CSS, JavaScript, Leaflet, and public APIs. Inspired by ISRO's mission to serve the nation.
+      </p>
+    </section>
+
+    <section id="contact" class="hidden-section">
+      <h2>Contact Me</h2>
+      <p>If you want to collaborate or discuss this project, reach out to me:</p>
+      <ul>
+        <li>Email: vishakha300216@gmail.com</li>
+        <li>GitHub Profile: <a href="https://vishakhahk.github.io/vishakha-portfolio/" target="_blank">github.com/yourusername</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/vishakha-kumbhar/" target="_blank">linkedin.com/in/yourprofile</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    Built with ❤️ for ISRO and India’s future | © 2025 Vishakha Kumbhar
+    <br>
+   
+        <p>
+          © 2025 Vishakha Kumbhar. This project is a personal educational demo inspired by ISRO’s mission and satellite data applications.  
+          It is not affiliated with, endorsed by, or officially connected to the Indian Space Research Organisation (ISRO).  
+          All data used are either publicly available or simulated for demonstration purposes.  
+          ISRO logos and trademarks used here are for illustrative purposes only and remain the property of ISRO.
+        </p>
+    
+      
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
